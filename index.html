@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wedding invitation template</title>
+    <!-- CSS stylesheet goes here <link rel="stylesheet" href="css/style.css">-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<body>
+
+    <header>
+        <h1 id="InviteHeader">Design Your Invitation</h1>
+      
+        </header>
+
+        
+          </head>
+          <body>
+          
+          <div class="grid-container">
+            <div class="item1">
+              <p id="inviteInstructions">Choose your design, fill in the template, and you're ready to print your invitations .</p>
+            </div>
+              <div class="item2">
+                
+                <button onclick="prideFunction()">Pride</button>
+                <button onclick="glitterFunction()">Glitter</button>
+                <button onclick="pastelFunction()">Pastel</button>
+              </div>
+
+              <div class="item3">
+
+                <div id="name1">
+                  <label>Name 1</label>
+                  <br>
+                  <input class="inviteInput" type="text" required id="Name1" onkeyup="name1Function()">
+                </div>
+            
+                  <div id="name2">
+                    <label>Name 2</label>
+                    <br>
+                    <input class="inviteInput" type="text" required id="Name2" onkeyup="name2Function()">
+                  </div>
+              
+                    <div id="date">
+                      <label>Date</label>
+                      <br>
+                      <input class="inviteInput" type="date" required id="Date" onmouseenter="dateFunction()">
+                    </div>
+                    
+                      <div id="time">
+                        <label>Time</label>
+                        <br>
+                        <input class="inviteInput" type="time" required id="Time" onmouseenter="timeFunction()">
+                      </div>
+              
+                        <div id="venue">
+                          <label>Venue</label>
+                          <br>
+                          <input class="inviteInput" type="text" required id="Venue" onkeyup="venueFunction()">
+                        </div>
+            
+              </div>
+
+                <div class="item4">
+                  <p>You are invited to the love celebration of</p>
+                  <p id="NAME1"></p>
+                  <p>and</p>
+                  <p id="NAME2"></p>
+                  <p>Date:</p>
+                  <p id="DATE"></p>
+                  <p>Time:</p>
+                  <p id="TIME"></p>
+                  <p>Venue:</p>
+                  <p id="VENUE"></p>
+
+                  <script>
+                    function name1Function() {
+                      let name1 = document.getElementById("Name1").value;
+                      console.log(name1);
+                      document.getElementById("NAME1").innerHTML = name1;
+                      //innerText or innerHTML will help with print the live typing
+                    }
+
+                    function name2Function() {
+                      let name2 = document.getElementById("Name2").value;
+                      console.log(name2);
+                      document.getElementById("NAME2").innerHTML = name2;
+                    }
+                    
+                    function dateFunction() {
+                      let date = document.getElementById("Date").value;
+                      console.log(date);
+                      document.getElementById("DATE").innerHTML = date;
+                    }
+
+
+                    function timeFunction() {
+                      let time = document.getElementById("Time").value;
+                      console.log(time);
+                      document.getElementById("TIME").innerHTML = time;
+                    }
+
+                    function venueFunction() {
+                      let venue = document.getElementById("Venue").value;
+                      console.log(venue);
+                      document.getElementById("VENUE").innerHTML = venue;
+                    }
+          
+                  </script>
+
+             
+            
+
+
+
+                </div>
+      
+
+
+
+                  <div class="item5">Footer</div>
+          </div>
+
+
+
+
+
+        
+        </body>
+        </html>
+        
+        
+    
+
+
+
+
+    <footer>
+        <div id="">
+        </div>
+    </footer>
+    
+</body>
