@@ -1,12 +1,11 @@
 
 
 .item1 { grid-area: header; }
-.item2 { grid-area: left; 
-    grid-auto-rows: 50px;
-}
+.item2 { grid-area: left;}
 .item3 { grid-area: left2; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
+#item4 { grid-area: right;}
+.item5 { grid-area: footer; background-image: linear-gradient(#00c3ff, rgb(237, 158, 230), white, rgb(237, 158, 230),#00c3ff);
+}
           
 .grid-container {
 display: grid;
@@ -66,5 +65,6 @@ body {
     font-size: 50px;
     line-height: 10%;
     }
+
 
    

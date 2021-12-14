@@ -29,9 +29,12 @@
             </div>
               <div class="item2">
                 
-                <button onclick="rainbowFunction()">Rainbow</button>
-                <button onclick="glitterFunction()">Glitter</button>
-                <button onclick="pastelFunction()">Pastel</button>
+                <button onclick="prideFunction()">Pride</button>
+                <button onclick="transFunction()">Trans</button>
+                <button onclick="panFunction()">Pan</button>
+                <button onclick="biFunction()">Bi</button>
+                <button onclick="AceFunction()">Ace</button>
+                <button onclick="LesbianFunction()">Lesbian</button>
               </div>
 
               <div class="item3">
@@ -72,20 +75,20 @@
             
               </div>
 
-                <div class="item4">
+                <div id="item4">
                   <p id="INVITED"></p>
                   <p id="INTRO">is invited to celebrate the wedding of</p>
                   <p id="NAME1"></p>
                   <p class="INFO">and</p>
                   <p id="NAME2"></p>
-                  <p class="INFO"></p>date:</p>
+                  <p class="INFO">date:</p>
                   <p id="DATE"></p>
                   <p class="INFO">time:</p>
                   <p id="TIME"></p>
                   <p class="INFO">venue:</p>
                   <p id="VENUE"></p>
-
-                  <div id="rainbowTemplate"></div>
+                </div>
+        
 
                   <script>
 
@@ -126,23 +129,35 @@
                       document.getElementById("VENUE").innerHTML = venue;
                     }
 
-                    function rainbowFunction() {
-                    document.getElementById("rainbowTemplate").style.backgroundColor = "red"
-                    }
+                    function prideFunction() {
+                    document.getElementById("item4").style.backgroundImage= 'linear-gradient(red,orange, yellow, green, rgb(0, 0, 255), rgba(121, 10, 117, 0.906))';
+                    }     
+                    
+                    function transFunction() {
+                    document.getElementById("item4").style.backgroundImage= 'linear-gradient(#00c3ff, rgb(237, 158, 230), white, rgb(237, 158, 230),#00c3ff)';
+                    }  
+
+                    // item4 background-image: linear-gradient(red,orange, yellow, green, rgb(0, 0, 255), rgba(121, 10, 117, 0.906));
+
+
+                   // function rainbowFunction() {
+                     //let classNames = document.getElementsByClassName("INFO");
+
+                     //for (let i = 0; i < classNames.length; i++) {
+                      // classNames[i].style.color= "red";
+                   //}
+                  //}
+                   
           
                   </script>
 
-             
-            
-
-
-
-                </div>
       
 
 
 
-                  <div class="item5">Footer</div>
+                  <div class="item5">Footer
+                  
+                  </div>
           </div>
 
 
