@@ -1,7 +1,9 @@
 
 
 .item1 { grid-area: header; }
-.item2 { grid-area: left; }
+.item2 { grid-area: left; 
+    grid-auto-rows: 50px;
+}
 .item3 { grid-area: left2; }
 .item4 { grid-area: right; }
 .item5 { grid-area: footer; }
@@ -36,14 +38,33 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    
    
   }
 
 
-  .item4 {
-      font-family: 'Times New Roman', Times, serif;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 90%;
-  }
+  
+
+  #INTRO {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    }
+
+  #INVITED {
+      font-family: cursive;
+      font-weight: bolder;
+      font-size: 40px;
+    }
+
+  #NAME1, #NAME2  {
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 50px;
+    line-height: 10%;
+    }
+
+   

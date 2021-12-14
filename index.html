@@ -55,13 +55,13 @@
                     <div id="date">
                       <label>Date</label>
                       <br>
-                      <input class="inviteInput" type="date" required id="Date" onmouseenter="dateFunction()">
+                      <input class="inviteInput" type="date" required id="Date" onchange="dateFunction()">
                     </div>
                     
                       <div id="time">
                         <label>Time</label>
                         <br>
-                        <input class="inviteInput" type="time" required id="Time" onmouseenter="timeFunction()">
+                        <input class="inviteInput" type="time" required id="Time" onchange="timeFunction()">
                       </div>
               
                         <div id="venue">
@@ -74,15 +74,15 @@
 
                 <div class="item4">
                   <p id="INVITED"></p>
-                  <p id="INTRO">is invited to the love celebration of</p>
+                  <p id="INTRO">is invited to celebrate the wedding of</p>
                   <p id="NAME1"></p>
-                  <p>and</p>
+                  <p class="INFO">and</p>
                   <p id="NAME2"></p>
-                  <p>Date:</p>
+                  <p class="INFO"></p>date:</p>
                   <p id="DATE"></p>
-                  <p>Time:</p>
+                  <p class="INFO">time:</p>
                   <p id="TIME"></p>
-                  <p>Venue:</p>
+                  <p class="INFO">venue:</p>
                   <p id="VENUE"></p>
 
                   <div id="rainbowTemplate"></div>
@@ -150,8 +150,7 @@
 
 
         
-        </body>
-        </html>
+        
         
         
     
@@ -165,3 +164,5 @@
     </footer>
     
 </body>
+
+        </html>
