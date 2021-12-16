@@ -109,11 +109,11 @@
                       console.log(invited);
                       document.getElementById("INVITED").innerHTML = invited;
                     }
+
                     function name1Function() {
                       let name1 = document.getElementById("Name1").value;
                       console.log(name1);
                       document.getElementById("NAME1").innerHTML = name1;
-                      //innerText or innerHTML will help with print the live typing
                     }
 
                     function name2Function() {
@@ -153,6 +153,17 @@
 
                     function prideFunction() {
                     document.getElementById("item3").style.backgroundImage= 'linear-gradient(rgb(255, 0, 24),rgb(255, 165, 44), rgb(255,255,65), rgb(0, 128, 24), rgb(0, 0, 249), rgb(134,0,125))';
+                    document.getElementById("INVITED").style.color='#350f61';
+                    document.getElementById("INTRO").style.color='#350f61';
+                    document.getElementById("NAME1").style.color='#D4AF37';
+                    document.getElementById("NAME2").style.color='#D4AF37';
+                    document.getElementById("DATE").style.color='#D4AF37';
+                    document.getElementById("TIME").style.color='#D4AF37';
+                    document.getElementById("VENUE").style.color='#D4AF37';
+                    document.getElementById("ADDRESS").style.color='#D4AF37';
+                    let classNames = document.getElementsByClassName("INFO");
+                    for (let i = 0; i < classNames.length; i++) {
+                     classNames[i].style.color= "#350f61";}
                     }     
 
                     function transFunction() {
@@ -170,22 +181,33 @@
 
                     function aceFunction() {
                     document.getElementById("item3").style.backgroundImage= 'linear-gradient(rgb(0,0,0), rgba(0, 0, 0, 36), white, rgb(128, 0, 128))';
-                    document.getElementById("INVITED").style.color='rgb(128, 0, 128)';
-                    document.getElementById("INTRO").style.color='rgb(128, 0, 128)';
-                    document.getElementById("NAME1").style.color='rgb(128, 0, 128)';
-                    document.getElementById("NAME2").style.color='rgb(128, 0, 128)';
-                    
-                    
-                    }
+                    document.getElementById("INVITED").style.color='#D4AF37';
+                    document.getElementById("INTRO").style.color='#D4AF37';
+                    document.getElementById("NAME1").style.color='#D4AF37';
+                    document.getElementById("NAME2").style.color='#D4AF37';
+                    document.getElementById("DATE").style.color='#D4AF37';
+                    document.getElementById("TIME").style.color='#D4AF37';
+                    document.getElementById("VENUE").style.color='#D4AF37';
+                    document.getElementById("ADDRESS").style.color='#D4AF37';
+                    let classNames = document.getElementsByClassName("INFO");
+                    for (let i = 0; i < classNames.length; i++) {
+                     classNames[i].style.color= "#D4AF37";}
+                   }
+                  
 
                     function lesbianFunction() {
                     document.getElementById("item3").style.backgroundImage= 'linear-gradient(rgb(214, 41, 0), rgb(255, 155, 85), white, rgb(212, 97, 166), rgb(165, 0, 98))';
                     }
 
-                    function practiceFunction() {
-        
-                      document.getElementById("INVITED").style.color= 'rgb(128, 0, 128)';}
                     
+        
+                    //function practiceFunction() {
+                    //let classNames = document.getElementsByClassName("INFO");
+
+                    //for (let i = 0; i < classNames.length; i++) {
+                     //classNames[i].style.color= "red";
+                   //}
+                 // }
                   
 
                     // item4 background-image: linear-gradient(red,orange, yellow, green, rgb(0, 0, 255), rgba(121, 10, 117, 0.906));
@@ -207,12 +229,12 @@
 
 
               <div id="item4">
-                <button onclick="prideFunction()">Pride</button>
-                <button onclick="transFunction()">Trans</button>
-                <button onclick="panFunction()">Pan</button>
-                <button onclick="biFunction()">Bi</button>
-                <button onclick="aceFunction()">Ace</button>
-                <button onclick="lesbianFunction()">Lesbian</button>
+                <button class="button" onclick="prideFunction()">Pride</button>
+                <button class="button" onclick="transFunction()">Trans</button>
+                <button class="button" onclick="panFunction()">Pan</button>
+                <button class="button" onclick="biFunction()">Bi</button>
+                <button class="button" onclick="aceFunction()">Ace</button>
+                <button class="button" onclick="lesbianFunction()">Lesbian</button>
                 <button onclick="practiceFunction()">Does this work</button>
                 </div>
       </div>      
