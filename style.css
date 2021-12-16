@@ -1,10 +1,9 @@
 
 
-.item1 { grid-area: header; }
-.item2 { grid-area: left;}
-.item3 { grid-area: left2; }
-#item4 { grid-area: right;}
-.item5 { grid-area: footer; background-image: linear-gradient(#00c3ff, rgb(237, 158, 230), white, rgb(237, 158, 230),#00c3ff);
+#item1 { grid-area: header; }
+#item2 { grid-area: left; }
+#item3 { grid-area: right;}
+#item4 { grid-area: footer;
 }
           
 .grid-container {
@@ -12,7 +11,6 @@ display: grid;
 grid-template-areas:
 'header header header'
 'left right right'
-'left2 right right'
 'footer footer footer';
 border-radius: 25px;
 border: 2px solid #5611a5;
