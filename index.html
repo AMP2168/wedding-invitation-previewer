@@ -14,14 +14,14 @@
 <body>
 
   <header>
-    <h1 id="InviteHeader">Your Pride Wedding Invitation</h1>
+    <h1 id="InviteHeader">Always Be Proud Wedding Invitation</h1>
   </header>
   
     <div class="grid-container">
 
       <div id="item1">
         <p id="inviteInstructions">Fill in the invitation details.<br>
-          Choose your pride flag background on the buttons below. <br>
+          Choose your Pride flag background on the buttons below. <br>
           You're ready to print your invitations.</p>
       </div>
 
@@ -124,7 +124,12 @@
                     
                     function dateFunction() {
                       let date = document.getElementById("Date").value;
-                      document.getElementById("DATE").innerHTML = date;
+                      const d = new Date (date);
+                      const ye = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(d);
+                      const mo = new Intl.DateTimeFormat('en', { month: 'long' }).format(d);
+                      const da = new Intl.DateTimeFormat('en', { day: '2-digit' }).format(d);
+                      let newDateVal = `${da} ${mo} ${ye}`;
+                      document.getElementById("DATE").innerHTML = newDateVal;
                     }
 
 
@@ -169,6 +174,8 @@
                     document.getElementById("INTRO").style.color='rgb(128, 0, 128)';
                     document.getElementById("NAME1").style.color='rgb(128, 0, 128)';
                     document.getElementById("NAME2").style.color='rgb(128, 0, 128)';
+                    
+                    
                     }
 
                     function lesbianFunction() {

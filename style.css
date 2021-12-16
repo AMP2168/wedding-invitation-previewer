@@ -1,6 +1,7 @@
 
 
-#item1 { grid-area: header;}
+#item1 { grid-area: header;
+text-align: center;}
 #item2 { grid-area: left; }
 #item3 { grid-area: right;
 line-height: 20%;}
@@ -13,18 +14,18 @@ grid-template-areas:
 'header header header'
 'left right right'
 'footer footer footer';
-grid-template-rows: 150px;
+grid-template-rows: 140px;
 
 border-radius: 25px;
-border: 2px solid #625571;
+border: 2px solid #350f61;
 grid-gap: 10px;
-background-color: #625571;
+background-color: #350f61;
 padding: 10px;
 }
           
 .grid-container > div {
 border-radius: 25px;
-border: 2px solid 625571;
+border: 2px solid #350f61;
 background-color: white;
 text-align: center;
 padding: 20px 0;
@@ -40,8 +41,17 @@ body {font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(rgba(255, 0, 25, 0.3),rgba(255, 164, 44, 0.303), rgba(255, 255, 65, 0.324), rgba(0, 128, 23, 0.276), rgba(0, 0, 249, 0.29), rgba(134, 0, 125, 0.283));
     }
     #InviteHeader {
-        text-align: center;
+        font-family: cursive;
+        font-weight: bold;
+        text-align: center; 
+        color: #350f61;
+        font-size:  60px;
     } 
+    
+   #inviteInstructions {
+    display: block;
+    margin:auto;
+   }
 
   #INTRO {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
