@@ -1,8 +1,6 @@
 
 
-#item1 { grid-area: header; 
-background-image: linear-gradient(rgb(255, 0, 204), rgba(255, 255, 0, 0.975), rgba(0, 179, 255, 0.975));
-}
+#item1 { grid-area: header;}
 #item2 { grid-area: left; }
 #item3 { grid-area: right;
 line-height: 20%;}
@@ -15,6 +13,8 @@ grid-template-areas:
 'header header header'
 'left right right'
 'footer footer footer';
+grid-template-rows: 150px;
+
 border-radius: 25px;
 border: 2px solid #625571;
 grid-gap: 10px;
@@ -37,9 +37,11 @@ body {font-family: Arial, Helvetica, sans-serif;
     margin-left: auto;
     margin-right: auto;
     width: 80%;  
-    background-image: linear-gradient(rgba(255, 0, 0, 0.30),rgba(255, 166, 0, 0.30), rgba(255, 255, 0, 0.30), rgba(0, 128, 0, 0.30), rgb(0, 0, 255, 0.30), rgba(121, 10, 117, 0.30));
+    background-image: linear-gradient(rgba(255, 0, 25, 0.3),rgba(255, 164, 44, 0.303), rgba(255, 255, 65, 0.324), rgba(0, 128, 23, 0.276), rgba(0, 0, 249, 0.29), rgba(134, 0, 125, 0.283));
     }
-     
+    #InviteHeader {
+        text-align: center;
+    } 
 
   #INTRO {
         font-family: Verdana, Geneva, Tahoma, sans-serif;

@@ -14,13 +14,15 @@
 <body>
 
   <header>
-    <h1 id="InviteHeader">Choose your pride colours invitation</h1>
+    <h1 id="InviteHeader">Your Pride Wedding Invitation</h1>
   </header>
   
     <div class="grid-container">
 
       <div id="item1">
-        <p id="inviteInstructions">Fill in the details, choose your pride flag background, and you're ready to print your invitations .</p>
+        <p id="inviteInstructions">Fill in the invitation details.<br>
+          Choose your pride flag background on the buttons below. <br>
+          You're ready to print your invitations.</p>
       </div>
 
       <div id="item2">
@@ -153,20 +155,31 @@
                     }  
 
                     function panFunction() {
-                    document.getElementById("item3").style.backgroundImage= 'linear-gradient(rgb(255, 33,140), rgb(255, 216, 0), rgba(87, 31,0,0))';
+                    document.getElementById("item3").style.backgroundImage= 'linear-gradient(rgb(255,33,140), rgb(255,216, 0), rgb(27,179,255))';
                     }
 
                     function biFunction() {
                     document.getElementById("item3").style.backgroundImage= 'linear-gradient(rgb(215, 2, 112), rgba(115,79,150), rgba(0, 56, 168))';
+                    document.getElementById("item3").style.color="white";
                     }
 
                     function aceFunction() {
                     document.getElementById("item3").style.backgroundImage= 'linear-gradient(rgb(0,0,0), rgba(0, 0, 0, 36), white, rgb(128, 0, 128))';
+                    document.getElementById("INVITED").style.color='rgb(128, 0, 128)';
+                    document.getElementById("INTRO").style.color='rgb(128, 0, 128)';
+                    document.getElementById("NAME1").style.color='rgb(128, 0, 128)';
+                    document.getElementById("NAME2").style.color='rgb(128, 0, 128)';
                     }
 
                     function lesbianFunction() {
                     document.getElementById("item3").style.backgroundImage= 'linear-gradient(rgb(214, 41, 0), rgb(255, 155, 85), white, rgb(212, 97, 166), rgb(165, 0, 98))';
                     }
+
+                    function practiceFunction() {
+        
+                      document.getElementById("INVITED").style.color= 'rgb(128, 0, 128)';}
+                    
+                  
 
                     // item4 background-image: linear-gradient(red,orange, yellow, green, rgb(0, 0, 255), rgba(121, 10, 117, 0.906));
 
@@ -191,8 +204,9 @@
                 <button onclick="transFunction()">Trans</button>
                 <button onclick="panFunction()">Pan</button>
                 <button onclick="biFunction()">Bi</button>
-                 <button onclick="aceFunction()">Ace</button>
+                <button onclick="aceFunction()">Ace</button>
                 <button onclick="lesbianFunction()">Lesbian</button>
+                <button onclick="practiceFunction()">Does this work</button>
                 </div>
       </div>      
 
@@ -217,3 +231,5 @@
 </body>
 
         </html>
+
+        
