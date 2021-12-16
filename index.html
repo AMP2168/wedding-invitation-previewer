@@ -14,89 +14,90 @@
 <body>
 
   <header>
-    <h1 id="InviteHeader">Design Your Invitation</h1>
+    <h1 id="InviteHeader">Choose your pride colours invitation</h1>
   </header>
   
-     <div class="grid-container">
-       </div>
+    <div class="grid-container">
 
       <div id="item1">
         <p id="inviteInstructions">Fill in the details, choose your pride flag background, and you're ready to print your invitations .</p>
       </div>
 
-        <div id="item2">
+      <div id="item2">
 
-          <div id="invited">
-            <label>Invitee</label>
-            <br>
-            <input class="inviteInput" type="text" required id="Invited" onkeyup="invitedFunction()">
-            <br>
-            <br>
-          </div>
-
-            <div id="name1">
-              <label>Name 1</label>
-              <br>
-              <input class="inviteInput" type="text" required id="Name1" onkeyup="name1Function()">
-              <br>
-              <br>
-            </div>
-            
-              <div id="name2">
-                <label>Name 2</label>
-                <br>
-                <input class="inviteInput" type="text" required id="Name2" onkeyup="name2Function()">
-                <br>
-                <br>
-              </div>
-              
-                <div id="date">
-                  <label>Date</label>
-                  <br>
-                  <input class="inviteInput" type="date" required id="Date" onchange="dateFunction()">
-                  <br>
-                  <br>
-                </div>
-                    
-                  <div id="time">
-                    <label>Time</label>
-                    <br>
-                    <input class="inviteInput" type="time" required id="Time" onchange="timeFunction()">
-                    <br>
-                    <br>
-                  </div>
-              
-                    <div id="venue">
-                      <label>Venue</label>
-                      <br>
-                      <input class="inviteInput" type="text" required id="Venue" onkeyup="venueFunction()">
-                      <br>
-                      <br>
-                    </div>
-
-                      <div id="address">
-                        <label>Address</label>
-                        <br>
-                        <input class="addressInput" type="text" required id="Address" onkeyup="addressFunction()">
-                      </div>
-            
+        <div id = "invited">
+          <label>Invitee</label>
+          <br>
+          <input class="inviteInput" type="text" required id="Invited" onkeyup="invitedFunction()">
+          <br>
+          <br>
         </div>
+              
+          
+        <div id="name1">
+          <label>Name 1</label>
+          <br>
+          <input class="inviteInput" type="text" required id="Name1" onkeyup="name1Function()">
+          <br>
+          <br>
+        </div>
+            
+        <div id="name2">
+          <label>Name 2</label>
+          <br>
+          <input class="inviteInput" type="text" required id="Name2" onkeyup="name2Function()">
+          <br>
+          <br>
+        </div>
+              
+        <div id="date">
+          <label>Date</label>
+          <br>
+          <input class="inviteInput" type="date" required id="Date" onchange="dateFunction()">
+          <br>
+          <br>
+        </div>
+                    
+        <div id="time">
+          <label>Time</label>
+          <br>
+          <input class="inviteInput" type="time" required id="Time" onchange="timeFunction()">
+          <br>
+          <br>
+        </div>
+              
+         <div id="venue">
+            <label>Venue</label>
+            <br>
+            <input class="inviteInput" type="text" required id="Venue" onkeyup="venueFunction()">
+            <br>
+            <br>
+         </div>
 
-         <div id="item3">
-            <p id="INVITED"></p>
-            <p id="INTRO">is invited to celebrate the wedding of</p>
-            <p id="NAME1"></p>
-            <p class="INFO">and</p>
-            <p id="NAME2"></p>
-            <p class="INFO">date:</p>
-            <p id="DATE"></p>
-            <p class="INFO">time:</p>
-            <p id="TIME"></p>
-            <p class="INFO">venue:</p>
-            <p id="VENUE"></p>
-            <p class="INFO">address:</p>
-            <p id="ADDRESS"></p>
+          <div id="address">
+            <label>Address</label>
+            <br>
+            <input class="addressInput" type="text" required id="Address" onkeyup="addressFunction()">
           </div>
+
+      </div>
+  
+
+      <div id="item3">
+        <p id="INVITED"></p>
+        <p id="INTRO">is invited to celebrate the wedding of</p>
+        <p id="NAME1"></p>
+        <p class="INFO">and</p>
+        <p id="NAME2"></p>
+        <p class="INFO">date:</p>
+        <p id="DATE"></p>
+        <p class="INFO">time:</p>
+        <p id="TIME"></p>
+        <p class="INFO">venue:</p>
+        <p id="VENUE"></p>
+        <p class="INFO">address:</p>
+        <p id="ADDRESS"></p>
+      </div>
         
 
                   <script>
@@ -121,7 +122,6 @@
                     
                     function dateFunction() {
                       let date = document.getElementById("Date").value;
-                      console.log(date);
                       document.getElementById("DATE").innerHTML = date;
                     }
 
@@ -139,19 +139,34 @@
                     }
 
                     function addressFunction() {
-                      let address = document.getElementById("Address")
+                      let address = document.getElementById("Address").value;
+                      console.log (address);
                       document.getElementById("ADDRESS").innerHTML = address;
                     }
 
                     function prideFunction() {
-                    document.getElementById("item3").style.backgroundImage= 'linear-gradient(red,orange, yellow, green, rgb(0, 0, 255), rgba(121, 10, 117, 0.906))';
+                    document.getElementById("item3").style.backgroundImage= 'linear-gradient(rgb(255, 0, 24),rgb(255, 165, 44), rgb(255,255,65), rgb(0, 128, 24), rgb(0, 0, 249), rgb(134,0,125))';
                     }     
 
-                    
-                    
                     function transFunction() {
-                    document.getElementById("item3").style.backgroundImage= 'linear-gradient(#00c3ff, rgb(237, 158, 230), white, rgb(237, 158, 230),#00c3ff)';
+                    document.getElementById("item3").style.backgroundImage= 'linear-gradient(rgb(85,205,252), rgb(247,168,184), white, rgb(247,168,184), rgb(85,205,252))';
                     }  
+
+                    function panFunction() {
+                    document.getElementById("item3").style.backgroundImage= 'linear-gradient(rgb(255, 33,140), rgb(255, 216, 0), rgba(87, 31,0,0))';
+                    }
+
+                    function biFunction() {
+                    document.getElementById("item3").style.backgroundImage= 'linear-gradient(rgb(215, 2, 112), rgba(115,79,150), rgba(0, 56, 168))';
+                    }
+
+                    function aceFunction() {
+                    document.getElementById("item3").style.backgroundImage= 'linear-gradient(rgb(0,0,0), rgba(0, 0, 0, 36), white, rgb(128, 0, 128))';
+                    }
+
+                    function lesbianFunction() {
+                    document.getElementById("item3").style.backgroundImage= 'linear-gradient(rgb(214, 41, 0), rgb(255, 155, 85), white, rgb(212, 97, 166), rgb(165, 0, 98))';
+                    }
 
                     // item4 background-image: linear-gradient(red,orange, yellow, green, rgb(0, 0, 255), rgba(121, 10, 117, 0.906));
 
@@ -171,16 +186,15 @@
 
 
 
-            <div id="item4">
-              <button onclick="prideFunction()">Pride</button>
-              <button onclick="transFunction()">Trans</button>
-              <button onclick="panFunction()">Pan</button>
-              <button onclick="biFunction()">Bi</button>
-              <button onclick="AceFunction()">Ace</button>
-              <button onclick="LesbianFunction()">Lesbian</button>
-                  
-            </div>
-          
+              <div id="item4">
+                <button onclick="prideFunction()">Pride</button>
+                <button onclick="transFunction()">Trans</button>
+                <button onclick="panFunction()">Pan</button>
+                <button onclick="biFunction()">Bi</button>
+                 <button onclick="aceFunction()">Ace</button>
+                <button onclick="lesbianFunction()">Lesbian</button>
+                </div>
+      </div>      
 
 
 
