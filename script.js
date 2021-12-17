@@ -63,7 +63,7 @@ function prideFunction() {
     document.getElementById("RSVP").style.color='black';
     let classNames = document.getElementsByClassName("INFO");
     for (let i = 0; i < classNames.length; i++) {
-    classNames[i].style.color= '#black';}
+    classNames[i].style.color= 'black';}
 }     
 
 function transFunction() {
