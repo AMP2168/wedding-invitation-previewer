@@ -155,12 +155,12 @@
                     document.getElementById("item3").style.backgroundImage= 'linear-gradient(rgb(255, 0, 24),rgb(255, 165, 44), rgb(255,255,65), rgb(0, 128, 24), rgb(0, 0, 249), rgb(134,0,125))';
                     document.getElementById("INVITED").style.color='#350f61';
                     document.getElementById("INTRO").style.color='#350f61';
-                    document.getElementById("NAME1").style.color='#D4AF37';
-                    document.getElementById("NAME2").style.color='#D4AF37';
-                    document.getElementById("DATE").style.color='#D4AF37';
-                    document.getElementById("TIME").style.color='#D4AF37';
-                    document.getElementById("VENUE").style.color='#D4AF37';
-                    document.getElementById("ADDRESS").style.color='#D4AF37';
+                    document.getElementById("NAME1").style.color='#350f61';
+                    document.getElementById("NAME2").style.color='#350f61';
+                    document.getElementById("DATE").style.color='#350f61';
+                    document.getElementById("TIME").style.color='#350f61';
+                    document.getElementById("VENUE").style.color='#350f61';
+                    document.getElementById("ADDRESS").style.color='#350f61';
                     let classNames = document.getElementsByClassName("INFO");
                     for (let i = 0; i < classNames.length; i++) {
                      classNames[i].style.color= "#350f61";}
@@ -176,8 +176,19 @@
 
                     function biFunction() {
                     document.getElementById("item3").style.backgroundImage= 'linear-gradient(rgb(215, 2, 112), rgba(115,79,150), rgba(0, 56, 168))';
-                    document.getElementById("item3").style.color="white";
-                    }
+                    document.getElementById("INVITED").style.color='#C0C0C0';
+                    document.getElementById("INTRO").style.color='#C0C0C0';
+                    document.getElementById("NAME1").style.color='#C0C0C0';
+                    document.getElementById("NAME2").style.color='#350f61';
+                    document.getElementById("DATE").style.color='#350f61';
+                    document.getElementById("TIME").style.color='#350f61';
+                    document.getElementById("VENUE").style.color='#350f61';
+                    document.getElementById("ADDRESS").style.color='#350f61';
+                    let classNames = document.getElementsByClassName("INFO");
+                    for (let i = 0; i < classNames.length; i++) {
+                     classNames[i].style.color= "#C0C0C0";}
+                    }     
+                    
 
                     function aceFunction() {
                     document.getElementById("item3").style.backgroundImage= 'linear-gradient(rgb(0,0,0), rgba(0, 0, 0, 36), white, rgb(128, 0, 128))';
@@ -229,12 +240,12 @@
 
 
               <div id="item4">
-                <button class="button" onclick="prideFunction()">Pride</button>
-                <button class="button" onclick="transFunction()">Trans</button>
-                <button class="button" onclick="panFunction()">Pan</button>
-                <button class="button" onclick="biFunction()">Bi</button>
-                <button class="button" onclick="aceFunction()">Ace</button>
-                <button class="button" onclick="lesbianFunction()">Lesbian</button>
+                <button class="button" id="pride" onclick="prideFunction()">Pride</button>
+                <button class="button" id="trans" onclick="transFunction()">Trans</button>
+                <button class="button" id="pan" onclick="panFunction()">Pan</button>
+                <button class="button" id="bi" onclick="biFunction()">Bi</button>
+                <button class="button" id="ace" onclick="aceFunction()">Ace</button>
+                <button class="button" id="lesbian" onclick="lesbianFunction()">Lesbian</button>
                 <button onclick="practiceFunction()">Does this work</button>
                 </div>
       </div>      
