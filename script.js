@@ -36,8 +36,15 @@ function venueFunction() {
 
 function addressFunction() {
     let address = document.getElementById("Address").value;
-    document.getElementById("ADDRESS").innerHTML = address;
+    document.getElementById("ADDRESS").innerHTML = nl2br(address);
 }
+
+function nl2br (str, replaceMode, isXhtml) {
+   var breakTag = (isXhtml) ? '<br />' : '<br>';
+   var replaceStr = (replaceMode) ? '$1'+ breakTag : '$1'+ breakTag +'$2';
+   return (str + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, replaceStr);
+}
+
 
 function rsvpFunction() {
     let rsvpdate = document.getElementById("Rsvp").value;
