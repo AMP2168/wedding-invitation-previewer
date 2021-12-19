@@ -1,4 +1,3 @@
-
 function invitedFunction() {
     let invited = document.getElementById("Invited").value;
     document.getElementById("INVITED").innerHTML = invited;
